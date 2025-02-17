@@ -1,75 +1,35 @@
 # LittleLibrary
 
-LittleLibrary is a web application built with Angular that allows users to search for books by category and view detailed information about each book. The application fetches data from the Open Library API.
+Questo è un progetto Angular che visualizza i vari libri dopo aver inserito la categoria nella barra di ricerca. Tutti i dati sono ottenuti dall'API di OpenLibrary.
 
-## Features
+### Link Online 
+ https://littlelibrary-26f19.web.app/
+## Indice
 
-- Search for books by category
-- View book details including title, author, cover image, and description
-- Responsive design for a seamless experience on different devices
+- [Installazione](#installazione)
+- [Componenti](#componenti)
 
-## Installation
+## Installazione
 
-To get started with the project, clone the repository and install the dependencies:
+Per eseguire questo progetto in locale, segui questi passaggi:
 
-```bash
-git clone https://github.com/aldosimone/LittleLibrary.git
-cd LittleLibrary
-npm install
-```
+1. Clona il repository:
+   `git clone https://github.com/Aldosimone99/LittleLibrary.git`
 
-## Development server
+2. Vai nella directory del progetto `cd LittleLibrary`
 
-To start a local development server, run:
+3. `npm install`
 
-```bash
-ng serve
-```
+4. `ng serve`
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Componenti
 
-## Code scaffolding
+`Search` è responsabile della ricerca di un elenco di libri inserendo la categoria nella barra di ricerca al centro della pagina. Una volta inserita la categoria si aprirà una pagina con i risultati.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+`Results` è responsabile per mostrare tutti i libri di una determinata categoria. In questa pagina verranno mostrati i titoli, le copertine dei libri e cliccando su uno di essi si aprirà la pagina con i dettagli.
 
-```bash
-ng generate component component-name
-```
+`Book Details` è responsabile per mostrare i dettagli del libro selezionato come la copertina, il titolo, l'autore e la descrizione.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-```bash
-ng generate --help
-```
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Questo progetto è stato generato con la versione 19. [Angular CLI](https://github.com/angular/angular-cli)
