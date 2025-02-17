@@ -1,6 +1,22 @@
 # LittleLibrary
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.7.
+LittleLibrary is a web application built with Angular that allows users to search for books by category and view detailed information about each book. The application fetches data from the Open Library API.
+
+## Features
+
+- Search for books by category
+- View book details including title, author, cover image, and description
+- Responsive design for a seamless experience on different devices
+
+## Installation
+
+To get started with the project, clone the repository and install the dependencies:
+
+```bash
+git clone https://github.com/aldosimone/LittleLibrary.git
+cd LittleLibrary
+npm install
+```
 
 ## Development server
 

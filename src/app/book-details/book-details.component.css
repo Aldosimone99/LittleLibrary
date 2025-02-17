@@ -1,7 +1,7 @@
 .book-details-container {
   text-align: left;
   padding: 20px;
-  max-width: 900px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -86,4 +86,15 @@
   height: 192px;
   border-radius: 5px;
   margin: 0 auto 10px;
+}
+
+@media (max-width: 600px) {
+  .book-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .book-cover img {
+    width: 100%;
+    height: auto;
+  }
 }/*# sourceMappingURL=book-details.component.css.map */

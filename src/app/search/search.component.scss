@@ -6,18 +6,19 @@ h1 {
     text-align: center;
 }
 
-
 .search-box {
     display: flex;
     align-items: center;
-    background: #303134; /* Colore simile alla barra di ricerca di Google */
+    background: #303134;
     border-radius: 50px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     padding: 10px 15px;
     width: 500px;
-  }
-  
-  input {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+input {
     flex: 1;
     background: transparent;
     border: none;
@@ -25,48 +26,72 @@ h1 {
     font-size: 1rem;
     color: #e8eaed;
     padding: 10px;
-  }
-  
-  button {
+}
+
+button {
     background: transparent;
     border: none;
     cursor: pointer;
     font-size: 1.2rem;
-    color: #9aa0a6; /* Grigio chiaro per l'icona */
+    color: #9aa0a6;
     padding: 5px 10px;
     transition: color 0.3s ease-in-out;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     color: white;
-  }
-  
-  .results {
+}
+
+.results {
     margin-top: 20px;
     background: #303134;
     border-radius: 8px;
     padding: 10px;
     width: 500px;
+    max-width: 100%;
     max-height: 300px;
     overflow-y: auto;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-  }
-  
-  .results ul {
+    margin: 0 auto;
+}
+
+.results ul {
     list-style: none;
     padding: 0;
-  }
-  
-  .results li {
+}
+
+.results li {
     padding: 10px;
     border-bottom: 1px solid #505357;
     color: #e8eaed;
-  }
-  
-  .results li:last-child {
+}
+
+.results li:last-child {
     border-bottom: none;
-  }
-  
-  .results li:hover {
+}
+
+.results li:hover {
     background: #3c4043;
-  }
+}
+
+@media (max-width: 600px) {
+    .search-box {
+        flex-direction: row;
+        padding: 10px;
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    button {
+        width: auto;
+        padding: 5px 10px;
+    }
+
+    .results {
+        width: 100%;
+    }
+}

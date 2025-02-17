@@ -9,11 +9,13 @@ h1 {
 .search-box {
   display: flex;
   align-items: center;
-  background: #303134; /* Colore simile alla barra di ricerca di Google */
+  background: #303134;
   border-radius: 50px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   padding: 10px 15px;
   width: 500px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 input {
@@ -31,7 +33,7 @@ button {
   border: none;
   cursor: pointer;
   font-size: 1.2rem;
-  color: #9aa0a6; /* Grigio chiaro per l'icona */
+  color: #9aa0a6;
   padding: 5px 10px;
   transition: color 0.3s ease-in-out;
 }
@@ -46,9 +48,11 @@ button:hover {
   border-radius: 8px;
   padding: 10px;
   width: 500px;
+  max-width: 100%;
   max-height: 300px;
   overflow-y: auto;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
 }
 
 .results ul {
@@ -68,4 +72,23 @@ button:hover {
 
 .results li:hover {
   background: #3c4043;
+}
+
+@media (max-width: 600px) {
+  .search-box {
+    flex-direction: row;
+    padding: 10px;
+    width: 100%;
+  }
+  input {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  button {
+    width: auto;
+    padding: 5px 10px;
+  }
+  .results {
+    width: 100%;
+  }
 }/*# sourceMappingURL=search.component.css.map */
