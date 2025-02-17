@@ -1,6 +1,8 @@
-<div *ngFor="let book of books">
+<div class="book-list">
+  <div class="book-card" *ngFor="let book of books">
     <a [routerLink]="['/book', book.id]">
       <img [src]="book.cover" alt="Copertina di {{ book.title }}">
     </a>
     <p>{{ book.title }}</p>
   </div>
+</div>

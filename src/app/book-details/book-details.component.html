@@ -1,12 +1,22 @@
-<div *ngIf="bookDetails; else loading">
-    <h2>{{ bookDetails.title }}</h2>
-    <p><strong>Autore:</strong> {{ bookDetails.authors?.[0]?.name || 'Sconosciuto' }}</p>
-    <p><strong>Descrizione:</strong> {{ bookDetails.description?.value || 'Nessuna descrizione disponibile.' }}</p>
-    <img *ngIf="bookDetails.covers?.length" 
-         [src]="'https://covers.openlibrary.org/b/id/' + bookDetails.covers[0] + '-L.jpg'" 
-         alt="Copertina del libro">
+<div class="book-details-container" *ngIf="bookDetails; else loading">
+  <div class="book-header">
+    <div class="book-cover" *ngIf="bookDetails.covers?.length">
+      <img [src]="'https://covers.openlibrary.org/b/id/' + bookDetails.covers[0] + '-L.jpg'" alt="Copertina del libro">
+    </div>
+    <div class="book-title">
+      <h2>{{ bookDetails.title }}</h2>
+    </div>
   </div>
-  
-  <ng-template #loading>
-    <p>Caricamento dettagli...</p>
+  <div class="book-author">
+    <div class="author-box">
+      <p><strong>Autore:</strong> {{ bookDetails.authors?.[0]?.name || 'Sconosciuto' }}</p>
+    </div>
+  </div>
+  <div class="book-description">
+    <p><strong>Descrizione:</strong> {{ bookDetails.description?.value || 'Nessuna descrizione disponibile.' }}</p>
+  </div>
+</div>
+
+<ng-template #loading>
+  <p>Caricamento dettagli...</p>
 </ng-template>
