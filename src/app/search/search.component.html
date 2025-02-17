@@ -1,5 +1,5 @@
 <h1>Little Library</h1>
 <div class="search-box">
-    <input type="text" [(ngModel)]="query" placeholder="Cerca un libro per categoria" />
+    <input type="text" [(ngModel)]="query" placeholder="Cerca un libro per categoria" (keyup.enter)="searchBooks()" />
     <button (click)="searchBooks()">🔍</button>
 </div>
