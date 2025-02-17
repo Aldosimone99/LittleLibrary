@@ -4,12 +4,6 @@ Questo progetto Angular permette agli utenti di cercare libri per categoria util
 
 ### Link Online 
  https://littlelibrary-26f19.web.app/
-## Indice
-
-- [Funzionalità](#funzionalità)
-- [Installazione](#installazione)
-- [Componenti](#componenti)
-
 
 ## Funzionalità
 - **Ricerca per categoria**: Inserisci una categoria nel campo di ricerca per ottenere una lista di libri.
