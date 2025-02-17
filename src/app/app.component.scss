@@ -1,0 +1,17 @@
+/* Centra tutto verticalmente e orizzontalmente */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* Nasconde il titolo dopo un po’ per maggiore pulizia */
+  h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #5f6368;
+    margin-bottom: 20px;
+    text-align: center;
+  }
