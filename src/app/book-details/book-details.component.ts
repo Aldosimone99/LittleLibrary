@@ -5,6 +5,7 @@ import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-book-details',
   templateUrl: './book-details.component.html',
+  standalone: false,
   styleUrls: ['./book-details.component.css']
 })
 export class BookDetailsComponent implements OnInit {
