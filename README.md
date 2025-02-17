@@ -1,13 +1,19 @@
 # LittleLibrary
 
-Questo è un progetto Angular che visualizza i vari libri dopo aver inserito la categoria nella barra di ricerca. Tutti i dati sono ottenuti dall'API di OpenLibrary.
+Questo progetto Angular permette agli utenti di cercare libri per categoria utilizzando l'API di Open Library. Gli utenti possono inserire una categoria (ad esempio, "fantasy") e visualizzare una lista di libri correlati. Inoltre, è possibile visualizzare i dettagli di ogni libro, inclusa la descrizione.
 
 ### Link Online 
  https://littlelibrary-26f19.web.app/
 ## Indice
 
+- [Funzionalità](#funzionalità)
 - [Installazione](#installazione)
 - [Componenti](#componenti)
+
+
+## Funzionalità
+- **Ricerca per categoria**: Inserisci una categoria nel campo di ricerca per ottenere una lista di libri.
+- **Visualizzazione dei dettagli del libro**: Clicca su un libro per visualizzarne i dettagli, inclusi titolo e descrizione.
 
 ## Installazione
 
